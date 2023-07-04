@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.AboutServices {
+    padding: 5%;
+}
+
+.AboutServices .someText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.AboutServices .someText .Col {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    color: #f70077;
+    
+}
+
+.AboutServices .someText .para {
+    text-align: center;
+}
+
+/* servicesBox */
+
+.AboutServices .servicesBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.AboutServices .servicesBox .box {
+    /* border: 1px solid yellow; */
+    box-shadow: 0px 0px 23px 0px #cbcbcb;
+    padding: 90% 5% 5% 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.AboutServices .servicesBox .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./img/nailart_1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: .80;
+}
+.AboutServices .servicesBox .box:nth-child(2):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./img/massage_3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: .80;
+}
+.AboutServices .servicesBox .box:nth-child(3):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./img/haircut_2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: .80;
+}
+.AboutServices .servicesBox .box:nth-child(4):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./img/cosmetics_4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: .80;
+}
+
+.AboutServices .servicesBox .box:nth-child(5):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./img/spa_5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: .80;
+}
+.AboutServices .servicesBox .box:nth-child(6):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./img/botox_6.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: .80;
+}
+.AboutServices .servicesBox .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    /* background-image: url('./img/nailart_1.jpg'); */
+    background-color: #f70077;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .1;
+    transition: .3s;
+}
+
+.AboutServices .servicesBox .box:hover:after {
+    width: 100%;
+
+}
+
+.AboutServices .servicesBox .box .typeOfServices{
+    font-size: 2rem;
+    line-height: 1.2em;
+    font-weight: 600;
+    font-family: 'Philosopher', sans-serif;
+}
+
+@media only screen and (max-width:768px){
+    .AboutServices .servicesBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+@media only screen and (max-width:425px){
+    .AboutServices .servicesBox {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+}
